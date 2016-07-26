@@ -2,7 +2,7 @@
 function findLongestWord(str){
   var numArray = [];
   var newStr = str.split(' ')
-  
+
     for(i=0; i<newStr.length; i++){
       numArray.push(newStr[i].length);
       var longest = Math.max.apply(Math,numArray);
@@ -35,16 +35,7 @@ function confirmEnding(str, target) {
     return false;
   }
 }
-// not 100% option below
-// function confirmEnding(str, target) {
-//   var endStr = str.split(' ');
-//   var lastWord = endStr[endStr.length-1];
-//   if(lastWord.includes(target)){
-//     return true;
-//   }else {
-//     return false;
-//   }
-// }
+
 function repeatStringNumTimes(str, num) {
   if(num>0){
    return str.repeat(num);
